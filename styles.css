@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.card{
+    width: calc(100% / 5 - 20px);
+    border: 2px solid darkblue;
+    padding: 4px;
+    box-shadow: 3px 3px black;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.card-header{
+    text-align: center;
+    font-weight: bold;   
+}
+.card-body{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* mediaqueri */
+/* para tablets */
+@media screen and (min-width:481px) and (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: row ;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        height: 300px;
+    }  
+    .elemento1{
+        background-color: aquamarine;
+        /* desaparecer elemento */
+        display: none;
+    }
+}
+/* para celulares */
+@media screen and (max-width:480px){
+    .card{
+        width:100%
+}
+}
