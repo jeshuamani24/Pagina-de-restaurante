@@ -50,4 +50,13 @@ img{
     .card{
         width:100%
 }
+footer{
+    color: blue; /* Color estándar de enlace */
+    text-decoration: underline; /* Subrayado como un enlace tradicional */
+    font-weight: bold;
+}
+
+footer:hover {
+    color: darkblue; /* Cambia de color cuando se pasa el cursor */
+}
 }
